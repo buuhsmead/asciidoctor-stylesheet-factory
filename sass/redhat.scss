@@ -1,0 +1,32 @@
+// All is based on what asciidoctor is providing
+// Only Red Hat branding added 'rh-*'
+
+
+@import "fonts/overpass";
+@import "settings/redhat";
+@import "components/asciidoc";
+@import "components/awesome-icons";
+
+
+// html body.article.toc2.toc-left div#content div.sect1 div.sectionbody table.tableblock.frame-all.grid-all.spread
+
+
+table thead {
+  background-color: $rh-red-regular-color;
+}
+
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+  color: white;
+}
+
+h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 {
+  color: $rh-red-regular-color;
+}
+
+.subheader, .admonitionblock td.content > .title, .audioblock > .title, .exampleblock > .title, .imageblock > .title, .listingblock > .title, .literalblock > .title, .stemblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, table.tableblock > .title, .verseblock > .title, .videoblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title {
+  color: $rh-red-darker-color;
+}
+
+#header > h1:first-child {
+  color: $rh-red-dark-color;
+}
